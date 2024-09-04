@@ -1,0 +1,44 @@
+.navbar {
+  @apply bg-white shadow-lg;
+}
+
+.navbar-container {
+  @apply container p-3 flex justify-between items-center;
+}
+
+.navbar-brand {
+  @apply flex items-center;
+}
+
+.logo {
+  @apply  m-2;
+  height: 1.5rem;
+}
+
+.brand-text {
+  @apply text-xl font-bold text-gray-800;
+}
+
+.navbar-menu {
+  @apply hidden md:flex items-center space-x-6;
+}
+
+.nav-link {
+  @apply text-gray-800 hover:text-gray-600;
+}
+
+.nav-link.disabled {
+  @apply text-gray-400 cursor-not-allowed;
+}
+
+.mobile-menu {
+  @apply md:hidden flex items-center;
+}
+
+.mobile-menu-button {
+  @apply text-gray-800 hover:text-gray-600;
+}
+
+.mobile-menu-icon {
+  @apply w-6 h-6;
+}
