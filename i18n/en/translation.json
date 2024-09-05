@@ -1,0 +1,11 @@
+{
+  "nav": {
+    "hostYourEvent": "Host Your Event",
+    "event": "Event",
+    "register": "Register",
+    "signIn": "Sign In"
+  },
+  "footer": {
+    "description": ""
+  }
+}

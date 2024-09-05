@@ -1,0 +1,5 @@
+/* LanDropDownStyles.css */
+.lan-dropdown-select{
+    @apply cursor-pointer;
+
+}
