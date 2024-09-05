@@ -1,0 +1,38 @@
+/* footerStyles.css */
+
+.footer {
+    @apply bg-gray-800 text-white py-6 mt-5;
+  }
+  
+  .footerContainer {
+    @apply container mx-auto flex flex-col md:flex-row justify-between items-center px-4;
+  }
+  
+  .footerLogo {
+    @apply text-center md:text-left;
+  }
+  
+  .footerContent {
+    @apply text-gray-400;
+  }
+  
+  .footerLinks {
+    @apply mt-4 md:mt-0;
+  }
+  
+  .footerLinks a {
+    @apply text-gray-300 hover:text-white mx-2;
+  }
+  
+  .footerSocial {
+    @apply mt-4 md:mt-0;
+  }
+  
+  .footerSocial a {
+    @apply mx-2 text-gray-300 hover:text-white;
+  }
+  
+  .footerCopyRights {
+    @apply text-center mt-4 text-gray-400;
+  }
+  

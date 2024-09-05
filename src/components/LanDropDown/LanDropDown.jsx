@@ -19,6 +19,7 @@ export default function LanDropDown() {
 
   return (
     <div className="lan-dropdown-container">
+      <i className="fa-solid fa-language"></i>{" "}
       <select
         onChange={handleLanguageChange}
         defaultValue={i18n.language}
@@ -30,7 +31,6 @@ export default function LanDropDown() {
           </option>
         ))}
       </select>
-
     </div>
   );
 }
