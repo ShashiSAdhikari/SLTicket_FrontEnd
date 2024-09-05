@@ -4,5 +4,8 @@
     "event": "நிகழ்வு",
     "register": "பதிவுசெய்யுங்கள்",
     "signIn": "உள்நுழையுங்கள்"
+  },
+  "footer": {
+    "description": ""
   }
 }

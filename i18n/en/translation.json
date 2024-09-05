@@ -4,5 +4,8 @@
     "event": "Event",
     "register": "Register",
     "signIn": "Sign In"
+  },
+  "footer": {
+    "description": ""
   }
 }
