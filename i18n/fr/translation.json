@@ -1,0 +1,12 @@
+{
+  "nav": {
+    "hostYourEvent": "Organisez votre événement",
+    "event": "Événement",
+    "register": "S'inscrire",
+    "signIn": "Se connecter"
+  },
+  "footer": {
+    "description": "",
+    "rights": "Tous droits réservés"
+  }
+}

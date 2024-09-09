@@ -30,7 +30,7 @@ function Footer() {
         </div>
       </div>
       <div className="footerCopyRights">
-        <p>© 2024 SLTMobitel. All Rights Reserved.</p>
+        <p>© 2024 SLTMobitel.{t('footer.rights')}</p>
       </div>
     </footer>
   );
