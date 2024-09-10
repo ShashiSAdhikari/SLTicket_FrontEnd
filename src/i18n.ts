@@ -3,6 +3,7 @@ import { initReactI18next } from "react-i18next";
 import en from "../i18n/en/translation.json";
 import sinh from "../i18n/sinh/translation.json";
 import tam from "../i18n/tam/translation.json";
+import fr from "../i18n/fr/translation.json";
 
 i18n.use(initReactI18next).init({
   debug: true,
@@ -12,13 +13,16 @@ i18n.use(initReactI18next).init({
   },
   resources: {
     en: {
-      translation: en
+      translation: en,
     },
     sinh: {
-      translation:sinh
+      translation: sinh,
     },
     tam: {
-      translation: tam
+      translation: tam,
+    },
+    fr: {
+      translation: fr,
     },
   },
 });

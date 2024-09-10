@@ -3,54 +3,64 @@ import "./navStyles.css";
 import LanDropDown from "../LanDropDown/LanDropDown";
 import Logo from "../../assets/Icons/SLTickets.svg";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 function NavBar() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false); // State to track if mobile menu is open
   const { t } = useTranslation();
 
-  // Toggle function for mobile menu
+  // Function to toggle the mobile menu
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
   };
 
-  // Close the menu if clicked outside
+  // Effect to close the mobile menu if clicked outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       const nav = document.querySelector(".navbar");
       if (menuOpen && nav && !nav.contains(event.target)) {
-        setMenuOpen(false);
+        setMenuOpen(false); // Close the menu if click is outside the navbar
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside); // Cleanup the event listener
     };
   }, [menuOpen]);
 
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <a href="#" className="navbar-brand">
+        {/* Brand logo linking to the home page */}
+        <Link to="/" className="navbar-brand">
           <img src={Logo} alt="SLTickets" className="logo" />
-        </a>
+        </Link>
+
+        {/* Menu links */}
         <div className={`navbar-menu ${menuOpen ? "active" : ""}`}>
-          <a href="#" className="nav-link">
+          <Link to="/host-your-event" className="nav-link">
             <i className="fa-solid fa-bullhorn"></i> {t("nav.hostYourEvent")}
-          </a>
-          <a href="#" className="nav-link">
+          </Link>
+          <Link to="/events" className="nav-link">
             <i className="fa-regular fa-calendar"></i> {t("nav.event")}
-          </a>
-          <a href="#" className="nav-link">
+          </Link>
+          <Link to="/register" className="nav-link">
             <i className="fa-regular fa-address-card"></i> {t("nav.register")}
-          </a>
-          <a href="#" className="nav-link disabled">
+          </Link>
+          {/* Sign In is a placeholder link */}
+          <Link to="/sign-in" className="nav-link disabled">
             <i className="fa-regular fa-user"></i> {t("nav.signIn")}
-          </a>
+          </Link>
+
+          {/* Language dropdown */}
           <LanDropDown />
         </div>
+
+        {/* Mobile menu button */}
         <div className="mobile-menu">
           <button className="mobile-menu-button" onClick={toggleMenu}>
             {menuOpen ? (
+              // SVG for close icon
               <svg
                 className="mobile-menu-icon"
                 fill="none"
@@ -66,6 +76,7 @@ function NavBar() {
                 ></path>
               </svg>
             ) : (
+              // SVG for hamburger icon (open menu)
               <svg
                 className="mobile-menu-icon"
                 fill="none"
