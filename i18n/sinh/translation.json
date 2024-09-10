@@ -6,6 +6,10 @@
     "signIn": "ඇතුල් වන්න"
   },
   "footer": {
-    "description": ""
+    "description": "",
+    "rights": "සියලු හිමිකම් ඇවිරිණි"
+  },
+  "event": {
+    "no event available": "වර්තමානයේ කිසිදු සිදුවීමක් නොමැත."
   }
 }

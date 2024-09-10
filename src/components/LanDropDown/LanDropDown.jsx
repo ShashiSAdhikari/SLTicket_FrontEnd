@@ -8,6 +8,7 @@ export default function LanDropDown() {
     { code: "en", name: "English" },
     { code: "sinh", name: "සිංහල" },
     { code: "tam", name: "தமிழ்" },
+    { code: "fr", name: "Français" },
   ];
 
   const { i18n } = useTranslation();
