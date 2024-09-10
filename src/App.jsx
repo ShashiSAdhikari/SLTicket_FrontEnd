@@ -4,6 +4,7 @@ import "./App.css";
 import { useTranslation } from "react-i18next";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Event from "./pages/Event/Event";
+import ProfileDetails from "./pages/Profile/ProfileDetails/ProfileDetails"; // Add the ProfileDetails component
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -16,6 +17,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Event />} />
+        <Route path="/profile" element={<ProfileDetails />} /> {/* Add this line */}
       </Routes>
     </Router>
   );
