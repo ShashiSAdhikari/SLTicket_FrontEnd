@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
-import SingleEvent from "../../components/SingleItem/SingleItem";
+import EventItem from "../../components/SingleItem/SingleItem"; // Make sure the component name matches
 import { fetchData } from "../../utils/FetchData"; // Import the fetch function
 import ErrorDisplay from "../../components/Error/ErrorDisplay"; // Import the error display component
 import Loading from "../../components/Loading/Loading"; // Import the loading component
@@ -20,9 +20,14 @@ function Event() {
       const { data, error } = await fetchData(
         "http://localhost:4000/api/event"
       );
-      setEvents(data);
-      setError(error);
-      setLoading(false);
+
+      if (data && data.events) {
+        setEvents(data.events); // Set the events from the API response
+      } else {
+        setError(error); // Set error if no events found
+      }
+
+      setLoading(false); // Stop loading regardless of success or failure
     };
 
     fetchEvents(); // Call the function to fetch events
@@ -41,7 +46,7 @@ function Event() {
 
         {/* Events list */}
         {!loading && !error && Array.isArray(events) && events.length > 0
-          ? events.map((event) => <SingleEvent key={event._id} event={event} />)
+          ? events.map((event) => <EventItem key={event._id} event={event} />)
           : !loading && !error && <p>{t("event.no event available")}</p>}
       </div>
 
