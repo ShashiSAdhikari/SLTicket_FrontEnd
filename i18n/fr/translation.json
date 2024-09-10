@@ -8,5 +8,8 @@
   "footer": {
     "description": "",
     "rights": "Tous droits réservés"
+  },
+  "event": {
+    "no event available": "Aucun événement disponible pour le moment."
   }
 }

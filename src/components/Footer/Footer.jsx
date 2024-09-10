@@ -10,7 +10,7 @@ function Footer() {
     <footer className="footer">
       <div className="footerContainer">
         <div className="footerLogo">
-          <img src={Logo} alt="SLTickets" className="mb-2" />
+          <img src={Logo} alt="SLTickets" className="mb-2 " />
           <p className="footerContent">{t("footer.description")}</p>
         </div>
         <div className="footerLinks">
