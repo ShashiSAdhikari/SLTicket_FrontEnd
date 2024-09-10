@@ -10,7 +10,7 @@ function Footer() {
     <footer className="footer">
       <div className="footerContainer">
         <div className="footerLogo">
-          <img src={Logo} alt="SLTickets" className="mb-2" />
+          <img src={Logo} alt="SLTickets" className="mb-2 " />
           <p className="footerContent">{t("footer.description")}</p>
         </div>
         <div className="footerLinks">
@@ -30,7 +30,7 @@ function Footer() {
         </div>
       </div>
       <div className="footerCopyRights">
-        <p>© 2024 SLTMobitel. All Rights Reserved.</p>
+        <p>© 2024 SLTMobitel.{t('footer.rights')}</p>
       </div>
     </footer>
   );
