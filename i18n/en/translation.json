@@ -11,5 +11,43 @@
   },
   "event": {
     "no event available": "No events available at the moment."
+  },
+  "profile": {
+    "Profile-Information": "Profile Information",
+    "Personal-details": "Personal details",
+    "security": "Security"
+  },
+  "profileDetails": {
+    "fname": "First Name",
+    "lname": "Last Name",
+    "gender": "Gender",
+    "select-gender": "Select Gender",
+    "male": "Male",
+    "female": "Female",
+    "other": "Other",
+    "dob": "Date of Birth",
+    "nic": "NIC",
+    "email": "Email Address",
+    "contact": "Contact Number",
+    "country": "Country",
+    "selectCountry": "Select Country",
+    "city": "City",
+    "address": "Permanent Address",
+    "save": "Save",
+    "placeholders": {
+      "firstName": "Enter your First Name",
+      "lastName": "Enter your Last Name",
+      "nic": "Enter your NIC number",
+      "email": "Enter your email address",
+      "contact": "Enter your contact number",
+      "city": "Enter City",
+      "address": "Enter your permanent address"
+    }
+  },
+  "profileSecurity": {
+    "oldPw": "Old Password",
+    "newPw": "New Password",
+    "confirmPw": "Confirm Password",
+    "update": "update"
   }
 }

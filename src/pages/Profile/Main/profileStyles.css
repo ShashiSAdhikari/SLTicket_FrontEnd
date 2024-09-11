@@ -1,0 +1,78 @@
+/* profileStyles.css */
+.profile-container {
+  @apply flex flex-col min-h-screen;
+}
+
+.profile-main {
+  @apply flex-grow flex flex-col lg:flex-row p-5 gap-5;
+}
+
+.profile-left-section {
+  @apply lg:w-1/4 flex flex-col items-center p-4 bg-white shadow-lg rounded-lg;
+}
+
+.profile-image-container {
+  @apply relative w-24 h-24 rounded-full overflow-hidden border-4 border-gray-300 mb-4;
+}
+
+.profile-image {
+  @apply w-full h-full object-cover;
+}
+
+.profile-input {
+  @apply absolute inset-0 opacity-0 cursor-pointer;
+}
+
+.profile-text {
+  @apply text-center;
+}
+
+.profile-name {
+  @apply text-lg font-semibold mb-2;
+}
+
+.profile-location {
+  @apply text-xs text-gray-500 mb-1;
+}
+
+.profile-phone,
+.profile-nic,
+.profile-email {
+  @apply text-gray-600 mb-1;
+}
+
+.profile-email-link {
+  @apply text-blue-600 mb-4;
+}
+
+.profile-update-btn {
+  @apply bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 rounded;
+}
+
+.profile-right-section {
+  @apply lg:w-3/4 p-5 bg-white shadow-lg rounded-lg;
+}
+
+.profile-info-heading {
+  @apply text-2xl font-semibold mb-4;
+}
+
+.profile-buttons-container {
+  @apply flex mb-4 justify-center;
+}
+
+.profile-buttons {
+  @apply flex flex-col;
+}
+
+.profile-btn-group {
+  @apply flex w-6/12;
+}
+
+.profile-btn-personal {
+  @apply w-1/2 py-2 px-4 bg-blue-500 text-white rounded-t-lg rounded-l-lg border-r border-gray-300;
+}
+
+.profile-btn-security {
+  @apply w-1/2 py-2 px-4 bg-gray-200 text-gray-800 rounded-t-lg rounded-r-lg;
+}
