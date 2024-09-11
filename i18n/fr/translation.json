@@ -11,5 +11,43 @@
   },
   "event": {
     "no event available": "Aucun événement disponible pour le moment."
+  },
+  "profile": {
+    "Profile-Information": "Informations de profil",
+    "Personal-details": "Détails personnels",
+    "security": "Sécurité"
+  },
+  "profileDetails": {
+    "fname": "Prénom",
+    "lname": "Nom de famille",
+    "gender": "Genre",
+    "select-gender": "Sélectionnez le genre",
+    "male": "Homme",
+    "female": "Femme",
+    "other": "Autre",
+    "dob": "Date de naissance",
+    "nic": "CIN",
+    "email": "Adresse e-mail",
+    "contact": "Numéro de contact",
+    "country": "Pays",
+    "selectCountry": "Sélectionnez un pays",
+    "city": "Ville",
+    "address": "Adresse permanente",
+    "save": "Enregistrer",
+    "placeholders": {
+      "firstName": "Entrez le prénom",
+      "lastName": "Entrez le nom de famille",
+      "nic": "Entrez le numéro de CIN",
+      "email": "Entrez l'adresse e-mail",
+      "contact": "Entrez le numéro de contact",
+      "city": "Entrez la ville",
+      "address": "Entrez l'adresse permanente"
+    }
+  },
+  "profileSecurity": {
+    "oldPw": "Ancien mot de passe",
+    "newPw": "Nouveau mot de passe",
+    "confirmPw": "Confirmez le mot de passe",
+    "update": "Mettre à jour"
   }
 }
