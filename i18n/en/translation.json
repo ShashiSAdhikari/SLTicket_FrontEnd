@@ -48,6 +48,9 @@
     "oldPw": "Old Password",
     "newPw": "New Password",
     "confirmPw": "Confirm Password",
-    "update": "update"
+    "oldPwPlaceholder": "Enter Old Password",
+    "newPwPlaceholder": "Enter New Password",
+    "confirmPwPlaceholder": "Confirm New Password",
+    "update": "Update Password"
   }
 }

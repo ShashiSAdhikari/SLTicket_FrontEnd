@@ -47,7 +47,10 @@
   "profileSecurity": {
     "oldPw": "Ancien mot de passe",
     "newPw": "Nouveau mot de passe",
-    "confirmPw": "Confirmez le mot de passe",
-    "update": "Mettre à jour"
+    "confirmPw": "Confirmer le mot de passe",
+    "oldPwPlaceholder": "Entrez l'ancien mot de passe",
+    "newPwPlaceholder": "Entrez le nouveau mot de passe",
+    "confirmPwPlaceholder": "Confirmez le nouveau mot de passe",
+    "update": "Mettre à jour le mot de passe"
   }
 }

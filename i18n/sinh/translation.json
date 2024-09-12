@@ -46,8 +46,11 @@
   },
   "profileSecurity": {
     "oldPw": "පැරණි මුරපදය",
-    "newPw": "අලුත් මුරපදය",
+    "newPw": "නව මුරපදය",
     "confirmPw": "මුරපදය තහවුරු කරන්න",
-    "update": "යාවත්කාල කරන්න"
+    "oldPwPlaceholder": "පැරණි මුරපදය ඇතුළත් කරන්න",
+    "newPwPlaceholder": "නව මුරපදය ඇතුළත් කරන්න",
+    "confirmPwPlaceholder": "නව මුරපදය තහවුරු කරන්න",
+    "update": "මුරපදය යාවත්කාලීන කරන්න"
   }
 }
