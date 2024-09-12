@@ -1,6 +1,6 @@
 /* Navbar styles for desktop */
 .navbar {
-  @apply bg-white shadow-lg;
+  @apply bg-white shadow-lg fixed w-full z-50;
 }
 
 .navbar-container {
@@ -50,7 +50,12 @@
     top: 64px; /* Adjust top position under navbar */
     left: 0;
     right: 0;
-    background-color: rgba(225, 225, 225, 0.796); /* Ensure background covers the full width */
+    background-color: rgba(
+      225,
+      225,
+      225,
+      0.796
+    ); /* Ensure background covers the full width */
     z-index: 10;
   }
 

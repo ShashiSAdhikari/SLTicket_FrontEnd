@@ -1,10 +1,10 @@
 /* profileStyles.css */
 .profile-container {
-  @apply flex flex-col min-h-screen;
+  @apply flex flex-col min-h-screen ;
 }
 
 .profile-main {
-  @apply flex-grow flex flex-col lg:flex-row p-5 gap-5;
+  @apply flex-grow flex flex-col lg:flex-row p-5 gap-5 mt-14;
 }
 
 .profile-left-section {
