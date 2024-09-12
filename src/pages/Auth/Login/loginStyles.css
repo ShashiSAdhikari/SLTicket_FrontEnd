@@ -1,0 +1,115 @@
+/* src/pages/Auth/Login/loginStyles.css */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .login-container {
+    flex: 1;
+    display: flex;
+    background-color: #ffffff;
+  }
+  
+  .login-image {
+    flex: 1;
+    background-color: #c2d6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-image .illustration {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+  }
+  
+  .login-form {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px; /* Adjust the gap value as needed */
+}
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+  }
+
+  .phone-input {
+    margin-bottom: 10px; /* Adjust the space between phone number and password */
+  }
+  
+  .forgot-password {
+    align-self: flex-end;
+    color: #3366ff;
+    text-decoration: none;
+    margin-bottom: 15px;
+  }
+  
+  .login-button {
+    background-color: #3366ff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .divider span {
+    padding: 0 10px;
+    color: #888;
+  }
+  
+  .google-button,
+  .apple-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .google-button img,
+  .apple-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
