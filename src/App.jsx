@@ -4,6 +4,11 @@ import "./App.css";
 import { useTranslation } from "react-i18next";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Event from "./pages/Event/Event";
+import Login from "./pages/Auth/Login/Login";
+import ForgotPassword from "./pages/Auth/Forgotpassword/Forgot";
+import CheckEmail from "./pages/Auth/CheckEmail/CheckEmail";
+// import ResetPassword from "./pages/Auth/ResetPassword/ResetPassword";
+import PasswordResetSuccess from "./pages/Auth/PasswordResetSuccess/PasswordResetSuccess";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -16,10 +21,14 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Event />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/forgotpassword" element={<ForgotPassword />} />
+        <Route path="/checkemail" element={<CheckEmail />} />
+        {/* <Route path="/resetpassword" element={<ResetPassword />} /> */}
+        <Route path="/passwordresetsuccess" element={<PasswordResetSuccess />} />
       </Routes>
     </Router>
   );
 }
-
 
 export default App;
