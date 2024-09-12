@@ -49,16 +49,20 @@ const Profile = () => {
             <div className="profile-btn-group">
               {/* Tab Buttons */}
               <button
-                className={`profile-btn-personal profile-btn ${
-                  activeTab === "personal" ? "active" : ""
+                className={`profile-btn ${
+                  activeTab === "personal"
+                    ? "bg-blue-500 text-white"
+                    : "bg-gray-200 text-gray-800"
                 }`}
                 onClick={() => handleTabChange("personal")}
               >
                 {t("profile.Personal-details")}
               </button>
               <button
-                className={`profile-btn-security profile-btn ${
-                  activeTab === "security" ? "active" : ""
+                className={`profile-btn ${
+                  activeTab === "security"
+                    ? "bg-blue-500 text-white"
+                    : "bg-gray-200 text-gray-800"
                 }`}
                 onClick={() => handleTabChange("security")}
               >

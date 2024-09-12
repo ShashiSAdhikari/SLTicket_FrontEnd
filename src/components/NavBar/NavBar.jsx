@@ -41,7 +41,7 @@ function NavBar() {
           <Link to="/host-your-event" className="nav-link">
             <i className="fa-solid fa-bullhorn"></i> {t("nav.hostYourEvent")}
           </Link>
-          <Link to="/events" className="nav-link">
+          <Link to="/event" className="nav-link">
             <i className="fa-regular fa-calendar"></i> {t("nav.event")}
           </Link>
           <Link to="/register" className="nav-link">

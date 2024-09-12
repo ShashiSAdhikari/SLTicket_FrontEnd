@@ -41,7 +41,7 @@
   }
 
   .navbar-menu {
-    @apply flex-col md:hidden; /* Display menu items as a column */
+    @apply flex-col md:hidden pb-4; /* Display menu items as a column */
     display: none; /* Hidden initially */
     height: max-content; /* Set height to fit the content */
     justify-content: center; /* Vertically center items */
@@ -50,7 +50,7 @@
     top: 64px; /* Adjust top position under navbar */
     left: 0;
     right: 0;
-    background-color: white; /* Ensure background covers the full width */
+    background-color: rgba(225, 225, 225, 0.796); /* Ensure background covers the full width */
     z-index: 10;
   }
 

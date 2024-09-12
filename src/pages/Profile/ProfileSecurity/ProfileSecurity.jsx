@@ -27,7 +27,7 @@ const ProfileSecurity = () => {
         <input
           type="password"
           name="oldPassword"
-          placeholder="Enter Old Password"
+          placeholder={t("profileSecurity.oldPwPlaceholder")} // Translated placeholder
           value={formData.oldPassword}
           onChange={handleChange}
           className="input"
@@ -38,7 +38,7 @@ const ProfileSecurity = () => {
         <input
           type="password"
           name="newPassword"
-          placeholder="Enter New Password"
+          placeholder={t("profileSecurity.newPwPlaceholder")} // Translated placeholder
           value={formData.newPassword}
           onChange={handleChange}
           className="input"
@@ -49,7 +49,7 @@ const ProfileSecurity = () => {
         <input
           type="password"
           name="confirmPassword"
-          placeholder="Confirm New Password"
+          placeholder={t("profileSecurity.confirmPwPlaceholder")} // Translated placeholder
           value={formData.confirmPassword}
           onChange={handleChange}
           className="input"
