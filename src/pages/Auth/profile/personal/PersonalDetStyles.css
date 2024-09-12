@@ -1,0 +1,130 @@
+.personal-details-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 200vh; /* Center the content horizontally */
+  }
+  
+  .profile-header {
+    text-align: center;
+    margin-top: 20px;
+    /* width: 100%; Ensure the header spans the full width */
+  }
+  
+  .personal-details-container {
+    display: flex;
+    justify-content: space-between; /* Adds spacing between the columns */
+    /* padding: 20px; */
+    /* width: 100%; Adjust width of the main container */
+    /* max-width: 1200px; Max width for the container */
+  }
+  
+  .personal-details-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align the sidebar content in the center */
+    margin-right: 30px;
+    width: 250px;
+    flex-basis: 250px; /* Set a fixed width for the sidebar */
+  }
+  
+  .profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .update-btn {
+    margin-top: 10px;
+    padding: 5px 15px;
+    background-color: #ff009d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .profile-info {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .personal-details-form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    width: calc(100% - 250px); /* Calculate the width based on the sidebar width */
+    flex-grow: 1; /* Allow form to take remaining space */
+  }
+  
+  .form-tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    flex: 1;
+    padding: 10px 0;
+    background-color: #e9e9e9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .tab.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .save-btn,
+  .delete-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .save-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: red;
+    color: white;
+  }
+
+  .NavBar {
+    width: 100%; /* Ensure the NavBar spans the full width */
+    display: flex;
+  }
+  

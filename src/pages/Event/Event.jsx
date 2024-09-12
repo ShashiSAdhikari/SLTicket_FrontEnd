@@ -1,12 +1,15 @@
 import React from "react";
-import "./eventStyles.css";
-import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
+import NavBar from "../../components/NavBar/NavBar";
+import "./eventStyles.css";
 
 function Event() {
   return (
     <div className="EventPage">
+      
       <NavBar />
+      
+
       <Footer />
     </div>
   );
